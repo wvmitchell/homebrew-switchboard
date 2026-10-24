@@ -4,8 +4,8 @@
 class Switchboard < Formula
   desc "Keyboard-only tmux switcher/creator for git-worktree workspaces"
   homepage "https://github.com/wvmitchell/switchboard"
-  url "https://github.com/wvmitchell/switchboard/archive/refs/tags/v0.51.1.tar.gz"
-  sha256 "deb7a038e1077c0d4fadb2a61c32ff55346bc1652756baa793504cba3578d1fb"
+  url "https://github.com/wvmitchell/switchboard/archive/refs/tags/v0.52.0.tar.gz"
+  sha256 "402e921f944c7a03fe62584eb103a2f50dce59da3f17b250c5ef306294fb990d"
   license "MIT"
   head "https://github.com/wvmitchell/switchboard.git", branch: "main"
 
@@ -30,11 +30,12 @@ class Switchboard < Formula
         switchboard install
 
       Then run `switchboard` (or `sb`) from any shell. `switchboard doctor`
-      checks the setup.
+      checks the setup. To update later: `switchboard upgrade`.
 
       Moving from a git clone? Run `switchboard uninstall` from the clone
       first, then `switchboard install` here (inside tmux, or reload tmux
-      after), then `switchboard enable-hooks` in each existing worktree. Finally
+      after); it repoints your configured projects' worktree hooks at this install
+      (run `switchboard enable-hooks` in any other hooked repo). Finally
       press your sidebar toggle key (prefix-s by default) twice in each session
       so its sidebars restart from this install. Full steps:
       docs/howto-install-and-upgrade.md in the repo.
