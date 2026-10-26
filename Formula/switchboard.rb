@@ -4,8 +4,8 @@
 class Switchboard < Formula
   desc "Keyboard-only tmux switcher/creator for git-worktree workspaces"
   homepage "https://github.com/wvmitchell/switchboard"
-  url "https://github.com/wvmitchell/switchboard/archive/refs/tags/v0.55.2.tar.gz"
-  sha256 "8f519000dd6bd977a241d5d7d581eb5ae866b98d90425b2a08330404678043f1"
+  url "https://github.com/wvmitchell/switchboard/archive/refs/tags/v0.56.0.tar.gz"
+  sha256 "673d92576497f2bdc6c7e15317d7e965c973d53fdb52317f99b8a0eb863ebf65"
   license "MIT"
   head "https://github.com/wvmitchell/switchboard.git", branch: "main"
 
