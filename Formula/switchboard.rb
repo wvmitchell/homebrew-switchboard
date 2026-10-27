@@ -4,14 +4,14 @@
 class Switchboard < Formula
   desc "Keyboard-only tmux switcher/creator for git-worktree workspaces"
   homepage "https://github.com/wvmitchell/switchboard"
-  url "https://github.com/wvmitchell/switchboard/archive/refs/tags/v0.59.0.tar.gz"
-  sha256 "24b85f86cb97cd2be0d44110924de29dbbfc55810b48db697d0786ba4849aefa"
+  url "https://github.com/wvmitchell/switchboard/archive/refs/tags/v0.60.0.tar.gz"
+  sha256 "03b5bd7a3ffd6c60d01ba234d4e66b95dd99f12bbb80c812d94c1270fb6ce8bd"
   license "MIT"
   head "https://github.com/wvmitchell/switchboard.git", branch: "main"
 
   depends_on "gh"
   depends_on "git"
-  depends_on "ruby" # macOS system Ruby is 2.6; switchboard needs >= 3.0
+  depends_on "ruby" # macOS system Ruby is 2.6; switchboard needs >= 3.3
   depends_on "tmux"
 
   def install
